@@ -1,0 +1,212 @@
+:root {
+  --clr-bg: linear-gradient(
+    90deg,
+    rgba(0, 213, 255, 1) 2.5%,
+    rgba(79, 255, 255, 1) 97.7%
+  );
+  --clr-bg-menu-item: #fff;
+  --clr-menu-item-hover: rgb(19, 98, 255);
+}
+
+/* Reset default margin and padding */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Remove the default list-style dots */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for the header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align items at the start and end of the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Set the header to span 100% width */
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+/* menu item  */
+.menu-item {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-inline: 5rem;
+  background-color: var(--clr-bg-menu-item);
+  border: none;
+  font-size: 1.1rem;
+}
+.menu-item:hover {
+  cursor: pointer;
+}
+.menu-item:hover {
+  color: var(--clr-menu-item-hover);
+}
+.profile-tab {
+  border-radius: 1rem;
+}
+
+/* drop down menu  */
+.drop-down-menu {
+  height: 0;
+  overflow: hidden;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.drop-down-menu.active {
+  height: calc(50px * 5);
+}
+.drop-down-menu .menu-item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.drop-down-menu .menu-item:first-child {
+  border-radius: 1rem 1rem 0 0;
+}
+.drop-down-menu .menu-item:last-child {
+  border-radius: 0 0 1rem 1rem;
+}
+.drop-down-menu .menu-item .item-txt {
+  width: 50%;
+  text-align: left;
+}
+.item-txt {
+  margin: 3px;
+  color: #333;
+}
+.item-icon {
+  font-size: 1.5rem;
+}
+
+.menu-toggle-icon.active {
+  animation: menu-icon 1s ease forwards;
+}
+@keyframes menu-icon {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
+
+/* Styling for the search input and button */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 8px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+}
+
+.search-container button {
+  margin-left: 10px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #666;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #444;
+}
+/* Styling for the logo */
+.logo {
+  font-size: 24px;
+  margin-right: 20px;
+}
+/* Styling for the logo */
+.logo-container {
+  width: 50px; /* Set the desired width of the logo */
+  height: 50px; /* Set the desired height of the logo */
+  overflow: hidden;
+  border-radius: 50%; /* Create a circular shape using border-radius */
+}
+
+.logo-image {
+  width: 100%; /* Ensure the image fits within the container */
+  height: 100%;
+  object-fit: cover; /* Crop and resize the image to cover the container */
+}
+
+/* Styling for the navigation menu */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%; /* Set the menu to take up full width */
+  justify-content: flex-start; /* Align the menu items to the right */
+}
+
+nav li {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the menu links */
+nav a:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.bodySection {
+  width: 100%;
+  padding: 30px;
+  background-color: #f5f5f5; /* Add a light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.bodySection h1 {
+  font-family: "Helvetica", sans-serif; /* Use a different font for the heading */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Set the footer to span 100% width */
+  margin-top: 20px; /* Add margin to separate footer from body */
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #888;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcu.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input id="display" readonly />
+        <button
+          onclick="extend_right()"
+          class="extend_right"
+          id="entend_right_btn">
+        </button>
+  
+        <div id="keys">
+          <button class="operator_btn" onclick="appendToDisplay('+')">+</button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button class="operator_btn" onclick="appendToDisplay('-')">-</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button class="operator_btn" onclick="appendToDisplay('*')">*</button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button class="operator_btn" onclick="appendToDisplay('/')">/</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button id="calcu" onclick="calculate()">=</button>
+          <button class="operator_btn" onclick="clearDisplay('clear')">C</button>
+          <button class="operator_btn" onclick="delete_('del')">D</button>
+          <button onclick="save('save')">S</button>
+          <button onclick="displayAns('ans')">Ans</button>
+        </div>
+      </div>
+      <div class="calculator_right" id="calculator_right">
+        <div id="keys">
+          <button onclick="appendToDisplay('(')">(</button>
+          <button onclick="appendToDisplay(')')">)</button>
+          <button onclick="appendToDisplay('^')">^</button>
+          <button onclick="appendToDisplay('log')">log</button>
+          <button onclick="appendToDisplay('sqrt')">sqrt</button>
+          <button onclick="appendToDisplay('3.14')">pi</button>
+          <!-- <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('7')">7</button> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="calcu.js"></script>
+</html>

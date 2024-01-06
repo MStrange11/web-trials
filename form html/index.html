@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      #login-form {
+        width: 400px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        margin: 100px auto;
+        position: relative;
+        animation: slide-up 1s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+
+      #login-form:hover{
+        border-radius: 100px;
+        background-color: #c3ff00;
+        transition: all 0.3s ease-in-out;
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(0%);
+        }
+      }
+
+      #login-form h2 {
+        text-align: center;
+        margin-top: 0;
+      }
+
+      #login-form label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      #login-form input[type="text"],
+      #login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      #login-form button[type="submit"] {
+        background-color: #3ac23f;
+        color: #ffffff;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin: auto;
+        width:50%;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        transition: all 0.5s ease-in-out;
+      }
+      
+      #login-form button[type="submit"]:hover {
+        border-radius: 20px;
+        background-color: #1c00d4;
+        transition: all 0.5s ease-in-out;
+      }
+
+      #login-form .error {
+        color: red;
+        margin-top: 10px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="login-form">
+      <h2>Login</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+      <div class="error">Incorrect username or password</div>
+    </form>
+    <h1>hello</h1>
+  </body>
+</html>

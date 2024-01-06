@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --clr-primary: #b9b1a6;
+  --clr-secondary: #333;
+  --clr-container-bg: #6c635c;
+  --clr-btn-bg: #a8a095;
+  --clr-btn-hover-bg: #857d72;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* font-family: sans-serif; */
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-primary);
+  font-family: "poppins";
+  position: relative;
+}
+
+.container {
+  height: 300px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--clr-container-bg); */
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px#000000;
+}
+.title {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.timer-form {
+  text-align: center;
+}
+
+.timer-form input,
+.btn_g button {
+  font-size: 1.2rem;
+  padding: 0.5rem 3rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+}
+
+#timer_Time {
+  background-color: var(--clr-btn-bg);
+}
+
+.btn_g button {
+  background-color: var(--clr-btn-bg);
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+}
+
+#startBtn {
+  margin-right: 2px;
+}
+#resetBtn {
+  margin-left: 2px;
+}
+
+.btn_g button:hover {
+  background-color: var(--clr-btn-hover-bg);
+}
+
+.btn_g button:active {
+  transform: translateY(2px);
+}
+
+.timer-info {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.attribute {
+  position: absolute;
+  bottom: 10px;
+}

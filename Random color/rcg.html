@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="rcg.css">
+</head>
+<body>
+    <!-- container  -->
+    <div class="container">
+        <!-- container header  -->
+        <div class="container-header">
+            <h1>Color Generator</h1>
+        </div>
+        <!-- container body  -->
+        <div class="container-body">
+            <div class="color-box" id="colorBox"></div>
+            <div class="color-info">
+                <div class="color-value">
+                    <h3>Hex : <span id="color-hex-value"></span></h3>
+                </div>
+                <div class="color-value">
+                    <h3>Rgb : <span id="color-rgb-value"></span></h3>
+                </div>
+            </div>
+        </div>
+        <!-- container footer  -->
+        <div class="container-footer">
+            <!-- color generate button  -->
+            <button id="color-generate-btn">
+                <i class="fa-solid fa-location-arrow"></i>
+                Generate color
+            </button>
+        </div>
+    </div>
+
+    <script src="rcg.js"></script>
+</body>
+</html>
