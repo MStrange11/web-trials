@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="calcu.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -13,9 +18,9 @@
         <button
           onclick="extend_right()"
           class="extend_right"
-          id="entend_right_btn">
-        </button>
-  
+          id="entend_right_btn"
+        ></button>
+
         <div id="keys">
           <button class="operator_btn" onclick="appendToDisplay('+')">+</button>
           <button onclick="appendToDisplay('7')">7</button>
@@ -33,7 +38,9 @@
           <button onclick="appendToDisplay('0')">0</button>
           <button onclick="appendToDisplay('.')">.</button>
           <button id="calcu" onclick="calculate()">=</button>
-          <button class="operator_btn" onclick="clearDisplay('clear')">C</button>
+          <button class="operator_btn" onclick="clearDisplay('clear')">
+            C
+          </button>
           <button class="operator_btn" onclick="delete_('del')">D</button>
           <button onclick="save('save')">S</button>
           <button onclick="displayAns('ans')">Ans</button>
@@ -54,4 +61,13 @@
     </div>
   </body>
   <script src="calcu.js"></script>
+
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>
